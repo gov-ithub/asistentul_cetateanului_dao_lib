@@ -2,6 +2,7 @@ package org.govithub.govac.dao.model.json;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 import org.codehaus.jackson.annotate.JsonProperty;
 
@@ -18,5 +19,13 @@ public class JsonMetadata {
 	
 	public Object get(String key) {
 		return metadataMap.get(key);
+	}
+	
+	public Set<String> keySet() {
+		return metadataMap.keySet();
+	}
+	
+	public boolean containsKey(String key) {
+		return metadataMap.containsKey(key);
 	}
 }
