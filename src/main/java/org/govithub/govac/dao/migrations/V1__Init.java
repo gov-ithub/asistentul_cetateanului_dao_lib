@@ -6,7 +6,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 public class V1__Init implements SpringJdbcMigration {
     public void migrate(JdbcTemplate jdbcTemplate) throws Exception {
         jdbcTemplate.execute("CREATE TABLE users(id bigserial PRIMARY KEY"
-        		+ ", username varchar(20) NOT NULL"
         		+ ", cnp varchar(20) NOT NULL"
         		+ ", email varchar(80) NOT NULL"
         		+ ", first_name varchar(80) NOT NULL"

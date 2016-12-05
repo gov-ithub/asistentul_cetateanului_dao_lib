@@ -25,14 +25,10 @@ public class User {
     @Column(name = "last_name")
     public String lastName;
     
-    @Column(name = "username")
-    public String username;
-
     User() { // jpa only
     }
 
-	public User(String username, String firstName, String lastName, String email, String phone, String cnp) {
-	    this.username = username;
+	public User(String firstName, String lastName, String email, String phone, String cnp) {
 		this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
